@@ -69,6 +69,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/spacing_medium"
+                android:layout_marginEnd="@dimen/spacing_small"
                 android:layout_marginBottom="@dimen/spacing_medium"
                 android:text="@{movie.available ? @string/available : @string/not_available}"
                 android:textAlignment="viewStart"
