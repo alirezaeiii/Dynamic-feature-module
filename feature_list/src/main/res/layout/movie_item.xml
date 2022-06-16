@@ -30,8 +30,7 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/spacing_medium">
+            android:layout_height="wrap_content">
 
             <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/left_well"
@@ -54,6 +53,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/spacing_small"
                 android:layout_marginTop="@dimen/spacing_medium"
+                android:layout_marginBottom="@dimen/spacing_medium"
                 android:text="@{movie.price}"
                 android:textAlignment="viewStart"
                 android:textAllCaps="false"
@@ -61,19 +61,22 @@
                 app:layout_constraintTop_toBottomOf="@id/image"
                 app:layout_constraintStart_toEndOf="@id/left_well"
                 app:layout_constraintEnd_toStartOf="@id/right_well"
-                tools:text="32€" />
+                app:layout_constraintBottom_toBottomOf="parent"
+                tools:text="32.00€" />
 
             <TextView
                 android:id="@+id/availability"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/spacing_medium"
+                android:layout_marginBottom="@dimen/spacing_medium"
                 android:text="@{movie.available ? @string/available : @string/not_available}"
                 android:textAlignment="viewStart"
                 android:textAllCaps="false"
                 android:textSize="14sp"
                 app:layout_constraintTop_toBottomOf="@id/image"
                 app:layout_constraintEnd_toStartOf="@id/right_well"
+                app:layout_constraintBottom_toBottomOf="parent"
                 tools:text="@string/available" />
 
             <ImageView
