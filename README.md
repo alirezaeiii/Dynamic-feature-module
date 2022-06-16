@@ -1,4 +1,4 @@
-# SampleDaggerRx
+# Dynamic_feature_module
 Modular Android architecture which showcase Kotlin, MVVM, Dynamic feature module, Navigation, Dagger, RxJava, Retrofit, DataBinding, Espresso, Unit test and Kotlin Gradle DSL.
 
 ## Features
