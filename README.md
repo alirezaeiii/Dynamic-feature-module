@@ -33,6 +33,10 @@ The `:common` module is an [com.android.library](https://developer.android.com/s
 * `:features_list` modules depend on `:common`, `:core` and `:app`.
 * `:core` and `:common` don’t have any dependency.
 
+### Inspired from
+[android-modular-architecture](https://github.com/vmadalin/android-modular-architecture)
+| :-: |
+
 ## Testing
 Local unit testing is done for ViewModel layer in `:feature_list` module.
 
